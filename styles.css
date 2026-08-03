@@ -123,3 +123,30 @@ footer { padding-top: 38px; padding-bottom: 38px; color: var(--muted); text-alig
   .gallery-large { min-height: 0; }
   .contact { margin-left: 14px; margin-right: 14px; }
 }
+
+.brand-card > img {
+  object-fit: contain;
+  padding: 28px;
+  background: #ffffff;
+}
+
+.brand-thumbnails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.brand-thumbnails img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+@media (max-width: 520px) {
+  .brand-thumbnails {
+    grid-template-columns: 1fr;
+  }
+}
