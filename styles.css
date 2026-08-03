@@ -150,3 +150,9 @@ footer { padding-top: 38px; padding-bottom: 38px; color: var(--muted); text-alig
     grid-template-columns: 1fr;
   }
 }
+
+.event-card > img {
+  object-fit: contain;
+  padding: 18px;
+  background: #ffffff;
+}
